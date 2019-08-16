@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">alfonsoVillalobosAndroid2019</string>
-    <string name="hello">hello world alfonso</string>
+    <string name="android">Android 2019</string>
+    <string name="helloWorld">hello world</string>
+    <string name="butto1">HELLO WORLD</string>
+    <string name="button2">TIME</string>
+    <string name="footer">Alfonso Villalobos Ulate alfonsocv12</string>
 </resources>
