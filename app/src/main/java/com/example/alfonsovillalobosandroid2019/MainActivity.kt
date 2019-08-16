@@ -11,8 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnHelloWorld.setOnClickListener {
-            val intentHelloWorld = Intent(this, HelloWorld::class.java)
-            startActivity(intentHelloWorld)
+            startActivity(Intent(this, HelloWorld::class.java))
         }
     }
 }
