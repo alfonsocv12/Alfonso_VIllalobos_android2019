@@ -23,31 +23,32 @@ class TimeFighter : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_time_fighter)
-        gameScore1.text = getString(R.string.score, score.toString())
-        timeLeft1.text = getString(R.string.time_left, (startTime / countDownInterval).toString())
+        setTextViewVariables()
         setTimer()
-        btnTapMe.setOnClickListener {
-            if(score == 0){
-                timer.start()
-            }
-            incrementScore()
-        }
-
-        btnRestart.setOnClickListener {
-            restartGame()
-        }
+        setBtnTapMe()
+        setBtnRestartGame()
     }
 
     /*
-    * Funcion encargada
-    * de reiniciar el juego*/
-    private fun restartGame(){
-        score = 0
-        btnRestart.isVisible = false
-        btnTapMe.isEnabled = true
-        timer.cancel()
+    * Funcion encargada de inicializar
+    * variables de conteo*/
+    private fun setTextViewVariables(){
         gameScore1.text = getString(R.string.score, score.toString())
         timeLeft1.text = getString(R.string.time_left, (startTime / countDownInterval).toString())
+    }
+
+    /*
+    * Funcion encargada de
+    * inicializar btn y
+    * reiniciar el juego*/
+    private fun setBtnRestartGame(){
+        btnRestart.setOnClickListener{
+            score = 0
+            btnRestart.isVisible = false
+            btnTapMe.isEnabled = true
+            timer.cancel()
+            setTextViewVariables()
+        }
     }
 
     /*
@@ -68,14 +69,22 @@ class TimeFighter : AppCompatActivity() {
     * Accion al terminar el
     * juego*/
     private fun endGame(){
-        Toast.makeText(this, getString(R.string.end_game, score.toString()), Toast.LENGTH_SHORT).show()
         btnTapMe.isEnabled = false
         btnRestart.isVisible = true
+        Toast.makeText(this, getString(R.string.end_game, score.toString()), Toast.LENGTH_LONG).show()
     }
 
     /*
-    * Funcion encargada de incrementar el score*/
-    private fun incrementScore(){
-        gameScore1.text = getString(R.string.score, (score++).toString())
+    * Funcion encargada de inicializar
+    * bnt de Tap me e incrementar el
+    * score con cada tap*/
+    private fun setBtnTapMe(){
+        btnTapMe.setOnClickListener {
+            if(score == 0){
+                timer.start()
+                gameScore1.text = getString(R.string.score, (score++).toString())
+            }
+            gameScore1.text = getString(R.string.score, (score++).toString())
+        }
     }
 }
