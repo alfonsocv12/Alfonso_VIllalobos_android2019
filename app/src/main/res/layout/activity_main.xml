@@ -17,7 +17,7 @@
             android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.081" android:textStyle="bold"
             android:textSize="18sp" app:layout_constraintHorizontal_bias="0.498"/>
     <Button
-            android:text="@string/butto1"
+            android:text="@string/butto_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnHelloWorld" android:layout_marginTop="8dp"
@@ -34,7 +34,7 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.496"/>
     <Button
-            android:text="@string/button2"
+            android:text="@string/button_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnTimeFighter" android:layout_marginTop="8dp"
