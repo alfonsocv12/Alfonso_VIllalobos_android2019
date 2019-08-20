@@ -3,6 +3,10 @@
     <string name="android">Android 2019</string>
     <string name="helloWorld">hello world</string>
     <string name="butto1">HELLO WORLD</string>
-    <string name="button2">TIME</string>
+    <string name="button2">TIMEFIGHTER</string>
+    <string name="button3">TAP ME</string>
+    <string name="timeLeft">Time Left:%s</string>
     <string name="footer">Alfonso Villalobos Ulate alfonsocv12</string>
+    <string name="score">Your score:%s</string>
+    <string name="end_game">End Game:%s</string>
 </resources>
