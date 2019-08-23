@@ -10,4 +10,8 @@
     <string name="score">Your score:%s</string>
     <string name="end_game">End Game:%s</string>
     <string name="restart">Restart</string>
+    <string name="fahrenheit_celsius">Temp converter</string>
+    <string name="title_temp_converter">Convert fahrenheit to celcius</string>
+    <string name="convert_button">Convert</string>
+    <string name="fahrenheit_edit_text">fahrenheit</string>
 </resources>
