@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setClickBtnHelloWorld()
         setClickBtnTimeFighter()
         setClickBtnTempConverter()
+        setClickBtnDialog()
     }
 
     /*
@@ -58,5 +59,14 @@ class MainActivity : AppCompatActivity() {
     * el tamaño maximo de los botones*/
     private fun getMaxWidth(){
         Log.d("ctrol51", R.layout.activity_main.toString())
+    }
+
+    /*
+    * Funcion encargada de mandar al
+    * Dialog*/
+    private fun setClickBtnDialog(){
+        btnActivityDialog.setOnClickListener {
+            startActivity(Intent(this, Dialog::class.java))
+        }
     }
 }

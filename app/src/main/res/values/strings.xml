@@ -15,4 +15,10 @@
     <string name="convert_button">Convert</string>
     <string name="fahrenheit_edit_text">fahrenheit</string>
     <string name="button_4">dialog</string>
+    <string name="show_dialog">show dialog</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="cancel">cancel</string>
 </resources>
