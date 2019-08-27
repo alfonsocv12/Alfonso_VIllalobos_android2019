@@ -57,6 +57,6 @@ class MainActivity : AppCompatActivity() {
     * Funcion encargada de obtener
     * el tamaño maximo de los botones*/
     private fun getMaxWidth(){
-        Log.d("ctrol51", layoutMain.getViewById())
+        Log.d("ctrol51", R.layout.activity_main.toString())
     }
 }

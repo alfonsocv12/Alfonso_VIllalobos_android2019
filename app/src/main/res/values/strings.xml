@@ -14,4 +14,5 @@
     <string name="title_temp_converter">Convert fahrenheit to celcius</string>
     <string name="convert_button">Convert</string>
     <string name="fahrenheit_edit_text">fahrenheit</string>
+    <string name="button_4">dialog</string>
 </resources>
