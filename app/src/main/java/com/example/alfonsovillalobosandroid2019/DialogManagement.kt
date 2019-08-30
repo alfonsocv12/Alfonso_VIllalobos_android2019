@@ -59,7 +59,7 @@ class DialogManagement : AppCompatActivity() {
 
         }
         myLogoutView.btnCancel.setOnClickListener {
-            
+
         }
     }
 }
