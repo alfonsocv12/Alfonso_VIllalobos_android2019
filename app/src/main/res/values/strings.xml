@@ -21,4 +21,10 @@
     <string name="password">password</string>
     <string name="login">login</string>
     <string name="cancel">cancel</string>
+    <string name="dialog_btn">Dialog management</string>
+    <string name="accept_btn">accept</string>
+    <string name="arch_img_description">arch img</string>
+    <string name="sure_txt">Are you sure</string>
+    <string name="show_img_btn">show image</string>
+    <string name="logout">logout</string>
 </resources>

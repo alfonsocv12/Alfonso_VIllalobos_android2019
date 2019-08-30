@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setClickBtnTimeFighter()
         setClickBtnTempConverter()
         setClickBtnDialog()
+        setClickBtnDialogManagement()
     }
 
     /*
@@ -67,6 +68,15 @@ class MainActivity : AppCompatActivity() {
     private fun setClickBtnDialog(){
         btnActivityDialog.setOnClickListener {
             startActivity(Intent(this, Dialog::class.java))
+        }
+    }
+
+    /*
+    * Funcion encargada de regresar a
+    * dialog management*/
+    private fun setClickBtnDialogManagement(){
+        btnDialogManagement.setOnClickListener {
+            startActivity(Intent(this,DialogManagement::class.java))
         }
     }
 }
