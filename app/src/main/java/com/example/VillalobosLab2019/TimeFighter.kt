@@ -1,13 +1,11 @@
-package com.example.alfonsovillalobosandroid2019
+package com.example.VillalobosLab2019
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_time_fighter.*
-import java.nio.file.attribute.AclFileAttributeView
 
 class TimeFighter : AppCompatActivity() {
     /*

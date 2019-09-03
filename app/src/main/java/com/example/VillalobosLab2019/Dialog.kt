@@ -1,4 +1,4 @@
-package com.example.alfonsovillalobosandroid2019
+package com.example.VillalobosLab2019
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +23,7 @@ class Dialog : AppCompatActivity() {
             val myDialogView = layoutInflater.inflate(R.layout.login_dialog, null)
             val mBuilder = AlertDialog.Builder(this).setView(myDialogView).setTitle("login form").show()
             setLogin(myDialogView, mBuilder)
+            setCancel(myDialogView, mBuilder)
         }
     }
 
@@ -35,6 +36,14 @@ class Dialog : AppCompatActivity() {
             val email = myDialogView.txtEmail.text.toString()
             val password = myDialogView.txtPassword.text.toString()
             txtLogin.setText(" Nombre: ${name} \n Email: ${email} \n Password: ${password}")
+            mBuilder.dismiss()
+        }
+    }
+
+    /*
+    * Funcion dedicada a agregar valor de cancelar*/
+    private fun setCancel(myDialogView: View, mBuilder: AlertDialog){
+        myDialogView.btnCancel.setOnClickListener {
             mBuilder.dismiss()
         }
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">alfonsoVillalobosAndroid2019</string>
+    <string name="app_name">VillalobosLab2019</string>
     <string name="android">Android 2019</string>
     <string name="hello_world">hello world</string>
     <string name="butto_1">HELLO WORLD</string>
@@ -27,4 +27,6 @@
     <string name="sure_txt">Are you sure</string>
     <string name="show_img_btn">show image</string>
     <string name="logout">logout</string>
+    <string name="loading">loading...</string>
+    <string name="loading_imd_description">Loading img</string>
 </resources>

@@ -1,10 +1,8 @@
-package com.example.alfonsovillalobosandroid2019
+package com.example.VillalobosLab2019
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.core.view.children
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +11,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSameBtnSise()
         setClickBtnHelloWorld()
         setClickBtnTimeFighter()
         setClickBtnTempConverter()
@@ -46,20 +43,6 @@ class MainActivity : AppCompatActivity() {
         btnTempConverter.setOnClickListener{
             startActivity(Intent(this,TempConverter::class.java))
         }
-    }
-
-    /*
-    * Funcion encargada de acomodar
-    * los tamaños de los botones*/
-    private fun setSameBtnSise(){
-        val maxWith = getMaxWidth()
-    }
-
-    /*
-    * Funcion encargada de obtener
-    * el tamaño maximo de los botones*/
-    private fun getMaxWidth(){
-        Log.d("ctrol51", R.layout.activity_main.toString())
     }
 
     /*

@@ -1,4 +1,4 @@
-package com.example.alfonsovillalobosandroid2019
+package com.example.VillalobosLab2019
 
 import org.junit.Test
 
