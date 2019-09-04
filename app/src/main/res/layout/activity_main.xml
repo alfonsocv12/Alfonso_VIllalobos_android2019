@@ -26,16 +26,15 @@
 
     <Button
             android:id="@+id/btnHelloWorld"
-            android:layout_width="wrap_content"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
             android:text="@string/butto_1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtAndroid" />
+
     <TextView
             android:text="@string/footer"
             android:layout_width="wrap_content"
@@ -47,41 +46,49 @@
 
     <Button
             android:id="@+id/btnTimeFighter"
-            android:layout_width="wrap_content"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
             android:text="@string/button_2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAndroid" />
+
+    <Button
+            android:id="@+id/btnTempConverter"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/fahrenheit_celsius"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnHelloWorld" />
 
     <Button
-            android:id="@+id/btnTempConverter"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnActivityDialog"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/fahrenheit_celsius"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/button_4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnTimeFighter" />
 
     <Button
-            android:id="@+id/btnActivityDialog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/button_4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnTempConverter" />
-
-    <Button
             android:id="@+id/btnDialogManagement"
-            android:layout_width="wrap_content"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="192dp"
+            android:layout_marginEnd="32dp"
             android:text="@string/dialog_btn"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnActivityDialog" />
+            app:layout_constraintTop_toBottomOf="@+id/txtAndroid" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

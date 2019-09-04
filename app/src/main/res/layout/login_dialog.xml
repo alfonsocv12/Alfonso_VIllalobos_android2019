@@ -2,43 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
+
     <EditText
             android:id="@+id/txtName"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:hint="@string/name"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
     <EditText
             android:id="@+id/txtEmail"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/email"
             android:importantForAutofill="no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
+
     <EditText
             android:id="@+id/txtPassword"
-            android:hint="@string/password"
-            android:importantForAutofill="no"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"/>
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
         <Button
                 android:id="@+id/btnLogin"
-                android:text="@string/login"
-                style="?android:attr/button"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/login" />
+
         <Button
                 android:id="@+id/btnCancel"
-                android:text="@string/cancel"
-                style="?android:attr/button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
     </LinearLayout>
 
 </LinearLayout>

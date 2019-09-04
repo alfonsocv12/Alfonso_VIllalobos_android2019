@@ -1,5 +1,6 @@
 package com.example.VillalobosLab2019
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,7 +24,7 @@ class DialogManagement : AppCompatActivity() {
     private fun setClickShowImage(){
         btnShowImage.setOnClickListener {
             val myImageView = layoutInflater.inflate(R.layout.dialog_image, null)
-            val mBuilder = AlertDialog.Builder(this).setView(myImageView).setTitle("image view").show()
+            val mBuilder = AlertDialog.Builder(this).setView(myImageView).show()
             setClickAccept(myImageView, mBuilder)
         }
     }
@@ -43,7 +44,7 @@ class DialogManagement : AppCompatActivity() {
     private fun setClickLogout(){
         btnLogout.setOnClickListener {
             val myLogoutView = layoutInflater.inflate(R.layout.logout_dialog, null)
-            val mBuilder = AlertDialog.Builder(this).setView(myLogoutView).setTitle("image view").show()
+            val mBuilder = AlertDialog.Builder(this).setView(myLogoutView).show()
             setClickLogout(myLogoutView, mBuilder)
         }
     }

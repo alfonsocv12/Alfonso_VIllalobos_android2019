@@ -14,17 +14,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
         <Button
                 android:id="@+id/btnAccept"
-                style="?android:attr/button"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/accept_btn"  />
+                android:text="@string/accept_btn" />
+
         <Button
                 android:id="@+id/btnCancel"
-                style="?android:attr/button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cancel"  />
+                android:text="@string/cancel" />
     </LinearLayout>
 </LinearLayout>
