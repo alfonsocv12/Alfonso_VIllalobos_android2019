@@ -2,36 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-    <EditText
-            android:id="@+id/txtName"
-            style="@android:style/Widget.Material.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/name"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
-
-    <EditText
-            android:id="@+id/txtEmail"
-            style="@android:style/Widget.Material.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:importantForAutofill="no"
-            android:inputType="textEmailAddress" />
-
-    <EditText
-            android:id="@+id/txtPassword"
-            style="@android:style/Widget.Material.EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:importantForAutofill="no"
-            android:inputType="textPassword" />
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+        <EditText
+                android:id="@+id/txtName"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+        <EditText
+                android:id="@+id/txtEmail"
+                style="@android:style/Widget.Material.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+
+        <EditText
+                android:id="@+id/txtPassword"
+                style="@android:style/Widget.Material.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:gravity="center">
 
         <Button

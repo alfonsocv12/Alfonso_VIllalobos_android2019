@@ -3,6 +3,7 @@ package com.example.VillalobosLab2019
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_time_fighter.*
@@ -78,6 +79,8 @@ class TimeFighter : AppCompatActivity() {
     * score con cada tap*/
     private fun setBtnTapMe(){
         btnTapMe.setOnClickListener {
+            val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.bounce)
+            it.startAnimation(bounceAnimation)
             if(score == 0){
                 timer.start()
                 gameScore1.text = getString(R.string.score, (score++).toString())
