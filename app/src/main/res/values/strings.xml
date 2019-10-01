@@ -29,4 +29,15 @@
     <string name="logout">logout</string>
     <string name="loading">loading...</string>
     <string name="loading_imd_description">Loading img</string>
+    <string name="button_playground">playground</string>
+    <string name="button_playground_toast">show toast</string>
+    <string name="button_playground_loop">Loop</string>
+    <string name="button_imc">Calculate Imc</string>
+    <string name="input_name">Name</string>
+    <string name="input_last">Last Name</string>
+    <string name="input_height">Height</string>
+    <string name="input_width">Width</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="avatar_img_description">avatar</string>
+    <string name="button_qr">read qr</string>
 </resources>

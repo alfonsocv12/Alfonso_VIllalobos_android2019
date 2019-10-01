@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         setClickBtnTempConverter()
         setClickBtnDialog()
         setClickBtnDialogManagement()
+        setClickBtnPlayGround()
+        setClickBtnCalculateImc()
     }
 
     /*
@@ -60,6 +62,24 @@ class MainActivity : AppCompatActivity() {
     private fun setClickBtnDialogManagement(){
         btnDialogManagement.setOnClickListener {
             startActivity(Intent(this,DialogManagement::class.java))
+        }
+    }
+
+    /*
+    * Funcion encargada de mandar a
+    * la pantalla de playground*/
+    private fun setClickBtnPlayGround(){
+        btnPlayGround.setOnClickListener {
+            startActivity(Intent(this,playGround::class.java))
+        }
+    }
+
+    /*
+    * Funcion encargada de mandar a
+    * la pantalla de IMC*/
+    private fun setClickBtnCalculateImc(){
+        btnImcCalculate.setOnClickListener {
+            startActivity(Intent(this,imc::class.java))
         }
     }
 }

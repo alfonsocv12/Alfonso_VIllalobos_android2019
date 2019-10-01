@@ -8,6 +8,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+            android:id="@+id/btnImcCalculate"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/button_imc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDialogManagement" />
+
     <TextView
             android:id="@+id/txtAndroid"
             android:layout_width="wrap_content"
@@ -80,15 +93,23 @@
     <Button
             android:id="@+id/btnDialogManagement"
             style="@style/AppTheme.RoundedCornerMaterialButton"
-            android:layout_width="0dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="192dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
             android:text="@string/dialog_btn"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtAndroid" />
+            app:layout_constraintTop_toBottomOf="@+id/btnTempConverter" />
+
+    <Button
+            android:id="@+id/btnPlayGround"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/button_playground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnActivityDialog" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
