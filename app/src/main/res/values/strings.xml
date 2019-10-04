@@ -42,4 +42,5 @@
     <string name="button_qr">read qr</string>
     <string name="shake_gesture_tittle">Rock Paper Scissors</string>
     <string name="img_placeholder_description">Placeholder</string>
+    <string name="button_rock_paper_scissors">Rock Paper Scissors</string>
 </resources>

@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setClickBtnDialogManagement()
         setClickBtnPlayGround()
         setClickBtnCalculateImc()
+        setClickBtnRPS()
     }
 
     /*
@@ -80,6 +81,15 @@ class MainActivity : AppCompatActivity() {
     private fun setClickBtnCalculateImc(){
         btnImcCalculate.setOnClickListener {
             startActivity(Intent(this,imc::class.java))
+        }
+    }
+
+    /*
+    * Funcion encargada de mandar a
+    * la pantalla de RPS*/
+    private  fun setClickBtnRPS(){
+        btnRPS.setOnClickListener {
+            startActivity(Intent(this,shakeGesture::class.java))
         }
     }
 }

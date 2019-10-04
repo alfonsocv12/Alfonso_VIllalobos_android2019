@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Switch
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_shake_gesture.*
 
 class shakeGesture : AppCompatActivity() {
@@ -20,17 +21,18 @@ class shakeGesture : AppCompatActivity() {
         mSensorListener = ShakeEventListener()
 
         this.mSensorListener!!.setOnShakeListener {
-            switch((1..3).shuffled().first()){
-                case 1:
-                    imgRPS.setImageResource(R.drawable.paper);
-                    break;
-                default:
-                    imgRPS.setImageResource(R.drawable.images);
-                    break;
-            }
-            imgRPS.setImageResource(R.drawable.paper)
-            imgRPS.setImageResource(R.drawable.rock)
-            imgRPS.setImageResource(R.drawable.scissor)
+            selectImage()
+        }
+    }
+
+    /*
+    * Funcion encargada a
+    * seleccionar una imagen*/
+    private fun selectImage(){
+        when((1..3).shuffled().first()){
+            1->imgRPS.setImageResource(R.drawable.paper)
+            2->imgRPS.setImageResource(R.drawable.rock)
+            3->imgRPS.setImageResource(R.drawable.scissor)
         }
     }
 
