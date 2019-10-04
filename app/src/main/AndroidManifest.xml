@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.example.VillalobosLab2019">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
-    <uses-permission android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
     <application
             android:allowBackup="true"
             android:fullBackupContent="true"
@@ -13,7 +17,8 @@
             android:roundIcon="@mipmap/ic_launcher"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".imc"/>
+        <activity android:name=".shakeGesture"></activity>
+        <activity android:name=".imc" />
         <activity android:name=".playGround" />
         <activity android:name=".DialogManagement" />
         <activity android:name=".Dialog" />

@@ -40,4 +40,6 @@
     <string name="button_calculate">Calculate</string>
     <string name="avatar_img_description">avatar</string>
     <string name="button_qr">read qr</string>
+    <string name="shake_gesture_tittle">Rock Paper Scissors</string>
+    <string name="img_placeholder_description">Placeholder</string>
 </resources>
