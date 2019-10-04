@@ -43,4 +43,8 @@
     <string name="shake_gesture_tittle">Rock Paper Scissors</string>
     <string name="img_placeholder_description">Placeholder</string>
     <string name="button_rock_paper_scissors">Rock Paper Scissors</string>
+    <string name="text_rock">Rock</string>
+    <string name="text_paper">Paper</string>
+    <string name="text_scissors">Scissors</string>
+    <string name="text_shake">Shake Phone</string>
 </resources>

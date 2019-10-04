@@ -5,9 +5,6 @@ import android.hardware.Sensor
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Switch
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_shake_gesture.*
 
 class shakeGesture : AppCompatActivity() {
@@ -21,26 +18,41 @@ class shakeGesture : AppCompatActivity() {
         mSensorListener = ShakeEventListener()
 
         this.mSensorListener!!.setOnShakeListener {
-            selectImage()
+            switchImage()
         }
     }
 
     /*
     * Funcion encargada a
-    * seleccionar una imagen*/
-    private fun selectImage(){
+    * seleccionar una imagen */
+    private fun switchImage(){
         when((1..3).shuffled().first()){
-            1->imgRPS.setImageResource(R.drawable.paper)
-            2->imgRPS.setImageResource(R.drawable.rock)
-            3->imgRPS.setImageResource(R.drawable.scissor)
+            1->setNewSelection(R.drawable.paper, R.string.text_paper)
+            2->setNewSelection(R.drawable.rock, R.string.text_rock)
+            3->setNewSelection(R.drawable.scissor, R.string.text_scissors)
         }
     }
 
+    /*
+    * Funcion dedicada a cambiar la foto
+    * y el texto de la accion*/
+    private fun setNewSelection(resource: Int, text: Int){
+        imgRPS.setImageResource(resource)
+        textSP.setText(text)
+        
+    }
+
+    /*
+    * Funcion encargada de sobre escribir
+    * el resumen de la app */
     override fun onResume() {
         super.onResume()
         mSensorManager!!.registerListener(mSensorListener, mSensorManager!!.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_UI)
     }
 
+    /*
+    * Funcion encargada de sobre escribir
+    * cuando la app esta en pausa*/
     override fun onPause() {
         mSensorManager!!.unregisterListener(mSensorListener)
         super.onPause()
