@@ -17,7 +17,8 @@
             android:roundIcon="@mipmap/ic_launcher"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".shakeGesture"></activity>
+        <activity android:name=".sharedPreferences"></activity>
+        <activity android:name=".shakeGesture" />
         <activity android:name=".imc" />
         <activity android:name=".playGround" />
         <activity android:name=".DialogManagement" />
