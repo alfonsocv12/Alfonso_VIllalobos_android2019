@@ -3,6 +3,7 @@ package com.example.VillalobosLab2019
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_imc.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setClickBtnPlayGround()
         setClickBtnCalculateImc()
         setClickBtnRPS()
+        setClickBtnSharedPreferences()
     }
 
     /*
@@ -79,7 +81,7 @@ class MainActivity : AppCompatActivity() {
     * Funcion encargada de mandar a
     * la pantalla de IMC*/
     private fun setClickBtnCalculateImc(){
-        btnImcCalculate.setOnClickListener {
+        btnCalculateImc.setOnClickListener {
             startActivity(Intent(this,imc::class.java))
         }
     }
@@ -90,6 +92,15 @@ class MainActivity : AppCompatActivity() {
     private  fun setClickBtnRPS(){
         btnRPS.setOnClickListener {
             startActivity(Intent(this,shakeGesture::class.java))
+        }
+    }
+
+    /*
+    * Funcion encargada de mandar a
+    * la pantalla de shared preference*/
+    private fun setClickBtnSharedPreferences(){
+        btnSharedPreferences.setOnClickListener {
+            startActivity(Intent(this,sharedPreferences::class.java))
         }
     }
 }

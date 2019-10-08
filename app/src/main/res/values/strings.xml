@@ -5,6 +5,7 @@
     <string name="butto_1">HELLO WORLD</string>
     <string name="button_2">TIMEFIGHTER</string>
     <string name="button_3">TAP ME</string>
+    <string name="time">Time</string>
     <string name="time_left">Time Left:%s</string>
     <string name="footer">Alfonso Villalobos Ulate alfonsocv12</string>
     <string name="score">Your score:%s</string>
@@ -20,6 +21,7 @@
     <string name="email">email</string>
     <string name="password">password</string>
     <string name="login">login</string>
+    <string name="save">Save</string>
     <string name="cancel">cancel</string>
     <string name="dialog_btn">Dialog management</string>
     <string name="accept_btn">accept</string>
@@ -47,4 +49,5 @@
     <string name="text_paper">Paper</string>
     <string name="text_scissors">Scissors</string>
     <string name="text_shake">Shake Phone</string>
+    <string name="button_shared_preferences">Shared Preferences</string>
 </resources>
